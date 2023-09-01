@@ -7,6 +7,7 @@ import Week2 from './Week2/Week2';
 import Week3 from './Week3/Week3';
 import Week4 from './Week4/Week4';
 import Week5 from './Week5/Week5';
+import Week6 from './Week6/Week6';
 
 const Drawer = createDrawerNavigator();
 
@@ -14,7 +15,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator 
-        initialRouteName="Week 5: Midterm"
+        initialRouteName="Week 6: Shake to Charge"
         screenOptions={{ headerShown: false, drawerPosition: "right" }}
       >
         <Drawer.Screen 
@@ -38,8 +39,8 @@ export default function App() {
           component={Week5} 
         />
         <Drawer.Screen 
-          name="Week 6: Empty" 
-          component={Blank} 
+          name="Week 6: Shake to Charge" 
+          component={Week6} 
         />
         <Drawer.Screen 
           name="Week 7: Empty" 
